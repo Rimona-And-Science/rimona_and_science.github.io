@@ -155,6 +155,27 @@
                     <span>#BuildInPublic</span>
                 </div>
             </article>
+            <!-- Entry 002 -->
+            <article class="bg-forest-dark/70 border border-forest-accent/20 rounded-2xl p-6 hover:border-forest-accent/60 transition cursor-pointer backdrop-blur-sm group flex flex-col justify-between" onclick="openModal002()">
+                <div>
+                    <div class="flex items-center justify-between text-xs text-forest-accent mb-3">
+                        <span class="font-mono bg-forest-accent/10 px-2 py-0.5 rounded border border-forest-accent/20">#002</span>
+                        <span class="text-gray-400">2 November 2026</span>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold text-white mb-3 group-hover:text-forest-accent transition leading-snug">
+                        Where Physics Meets Humanity — The Legacy of Medical Physics
+                    </h3>
+                    <p class="text-gray-300 text-sm line-clamp-3 mb-6 leading-relaxed">
+                        It started with people bound by unyielding curiosity. Rontgen, Becquerel, and Curie letting raw curiosity pull them past the known edge of science...
+                    </p>
+                </div>
+                
+                <div class="flex flex-wrap gap-2 text-[11px] font-mono text-biolum-gold">
+                    <span>#MedicalPhysics</span>
+                    <span>#HistoryOfScience</span>
+                    <span>#AI</span>
+                </div>
+            </article>
 
         </div>
     </section>
@@ -270,6 +291,54 @@
                 </p>
             </div>
         </div>
+        <!-- Logbook Modal Popup #002 -->
+    <div id="logbookModal002" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="bg-forest-dark border border-forest-accent/40 rounded-2xl max-w-2xl w-full p-6 md:p-8 relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal002()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl font-mono">✕</button>
+            
+            <div class="flex items-center space-x-3 text-xs text-forest-accent mb-4">
+                <span class="font-mono bg-forest-accent/10 px-2.5 py-1 rounded border border-forest-accent/20">LOG ENTRY #002</span>
+                <span>November 2026</span>
+            </div>
+
+            <h3 class="text-2xl font-serif font-bold text-white mb-6">Where Physics Meets Humanity</h3>
+
+            <div class="prose prose-invert text-gray-300 text-sm space-y-4 leading-relaxed">
+                <p class="italic text-biolum-glow">
+                    "It started with people bound by unyielding curiosity. Rontgen observing shadows from an invisible beam, Becquerel capturing the spontaneous fingerprint of uranium, and Curie gazing into the eerie luminescence of radium, all letting raw curiosity pull them past the known edge of science."
+                </p>
+                <p>
+                    Medical physics is the direct descendant of those exact moments of fearless inquiry. When Rontgen captured the first human X-ray in 1895, Becquerel revealed natural radioactivity in 1896, and Curie isolated radium, little did they know how light and shadows would transcend the invisible barrier between physics and healing, rewriting the trajectory of human medicine forever.
+                </p>
+
+                <h4 class="text-white font-serif font-bold pt-2">Where Physics Meets Humanity</h4>
+                <p>
+                    Today, those early breakthroughs have expanded into diagnostic imaging of the unseen, high contrast soft tissue differentiation, targeted radiopharmaceutical transport, photon delivery, proton therapy, complex dose modelling and so on. What fascinates me most about this discipline is the seamless bridge between abstract physics and clinical reality.
+                </p>
+
+                <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                    <li>
+                        <strong class="text-forest-accent">The Physics:</strong> Translating invisible radiation transport, attenuation coefficients, and voxelated DICOM datasets into precise personalised healthcare.
+                    </li>
+                    <li>
+                        <strong class="text-biolum-gold">The Stakes:</strong> In clinical oncology, precision isn't an academic exercise rather it is the margin between tumour eradication and healthy tissue preservation. Every anatomical contour carries real human weight.
+                    </li>
+                </ul>
+
+                <h4 class="text-white font-serif font-bold pt-2">The Next Frontier: Intelligence at the Voxel Level</h4>
+                <p>
+                    That is why my journey bridges Medical Physics with AI and Data Science. As machine learning reshapes healthcare, our tools must evolve to understand both sides of the equation the underlying laws of radiation physics and the pattern recognition power of modern neural networks.
+                </p>
+                <p>
+                    From capturing the unseen or measuring the glow to teaching machines how to optimize it safely, precisely, and intelligently for every patient who walks through the door so that they have a better quality of life.
+                </p>
+
+                <p class="pt-4 border-t border-forest-accent/25 italic text-biolum-cyan text-center font-serif">
+                    "Science is beautiful, isn’t it?"
+                </p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- JavaScript Scripts -->
@@ -462,6 +531,13 @@
         }
         function closeModal() {
             document.getElementById('logbookModal').classList.add('hidden');
+        }
+        // --- Modal Controllers for Entry #002 ---
+        function openModal002() {
+            document.getElementById('logbookModal002').classList.remove('hidden');
+        }
+        function closeModal002() {
+            document.getElementById('logbookModal002').classList.add('hidden');
         }
     </script>
 </body>
